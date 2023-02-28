@@ -9,9 +9,6 @@ One of them, is the lack of raw material or even instructions of how proceed.
 # Overview
 Project is a repository that will group real people, with best intentions to help, share and even sponsor.
 
-# Restrictions
-There is no restriction of size, type, commercial and so on.
-
 It can be in any field of activity like IoT, Wood, Appliance, Fun, Toys, Garden, Handicraft.
 
 # How it works
@@ -20,9 +17,6 @@ You can publish your project idea, invite your friends to contribute or even ask
 Imagine that you have material to send to the garbage, it could be helpful here in pending projects.
 
 Once you it is, you just notify the project maker, and then he/she will figure it out how to collect it.
-
-# Disclaimer
-It's not a advertising platform to create invoices to anyone, the main purpose is make ideas come true somehow.
 
 # Architecture
 
@@ -46,3 +40,9 @@ Main channel of usage today, maybe in the near future it could be available on t
 ![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/Docs/frontend.jpg "Angular Framework + Tailwind + RxJS")
 
 It has been coded in Angular Framework with Tailwind and RxJS.
+
+# Restrictions
+There is no restriction of size, type, commercial and so on.
+
+# Disclaimer
+It's not a advertising platform to create invoices to anyone, the main purpose is make ideas come true somehow.
