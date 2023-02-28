@@ -29,6 +29,8 @@ It's not a advertising platform to create invoices to anyone, the main purpose i
 ## Database
 Multi model databases (Fauna) to accomplish different scenarios (document, relational, time series and etc).
 
+![Multi model Database](https://github.com/p4ndev/social-makers/raw/master/Docs/backend.jpg "Fauna DB").
+
 ## Api
 Restful API's has coded in Asp.net Core with C#, grouped in a gateway done with Nginx.
 
