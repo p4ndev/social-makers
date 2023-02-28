@@ -29,17 +29,20 @@ It's not a advertising platform to create invoices to anyone, the main purpose i
 ## Database
 Multi model databases (Fauna) to accomplish different scenarios (document, relational, time series and etc).
 
-![Multi model Database](https://github.com/p4ndev/social-makers/raw/master/Docs/backend.jpg "Fauna DB").
+![Multi model Database](https://github.com/p4ndev/social-makers/raw/master/Docs/database.jpg "Fauna DB")
 
 ## Api
 Restful API's has coded in Asp.net Core with C#, grouped in a gateway done with Nginx.
 
+![Backend N-Tier Architecture](https://github.com/p4ndev/social-makers/raw/master/Docs/backend.jpg "Asp.Net Core API + Nginx")
+
 The Api gateway will expose some endpoints related to common action to consumers.
 
-## Remote Procedure Call
 It's using SignalR to collect event throughout the API's, direct and basic authentication on server side.
 
 ## Web app
 Main channel of usage today, maybe in the near future it could be available on tv, streaming platform, education, mobile and etc.
 
-It's coded in Angular Framework with Tailwind and RxJS.
+![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/Docs/frontend.jpg "Angular Framework + Tailwind + RxJS")
+
+It has been coded in Angular Framework with Tailwind and RxJS.
