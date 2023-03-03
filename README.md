@@ -31,7 +31,7 @@ https://github.com/p4ndev/social-makers/blob/master/uix/02.png
 
 https://github.com/p4ndev/social-makers/blob/master/uix/03.png
 
-Provided by Auth0, that cover sign in, up and forgot, for web interface considering (font: Segoe UI)
+It will cover sign in, up and forgot, for web interface considering (font: Segoe UI)
 
 # Api
 Restful API's has coded in Asp.net Core with C#, grouped in a gateway done with Nginx.
@@ -61,6 +61,12 @@ It's not a advertising platform to create invoices to anyone, the main purpose i
 
 ## Visual Design & Identity
 Three different version of main logo, with no type - it can be applied to any color aligned around (font: Arvo).
+
+https://github.com/p4ndev/social-makers/raw/master/concept/1.jpg
+
+https://github.com/p4ndev/social-makers/raw/master/concept/2.jpg
+
+https://github.com/p4ndev/social-makers/raw/master/concept/3.jpg
 
 ## All projects mobile version (some features hidden)
 ![All projects](https://github.com/p4ndev/social-makers/raw/master/uix/05.jpg "Mobile")
