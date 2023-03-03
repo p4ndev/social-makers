@@ -56,11 +56,10 @@ It's not a advertising platform to create invoices to anyone, the main purpose i
 # Interface
 
 ## Visual Design & Identity
-Three different version of main logo, with no type - it can be applied to any color aligned around.
-3 different concept applied to advertising the tool (font: Arvo)
+Three different version of main logo, with no type - it can be applied to any color aligned around (font: Arvo).
 
 ## Authentication & Authorization
-Provided by Auth0, that cover sign in, up and forgot.
+Provided by Auth0, that cover sign in, up and forgot, for web interface considering (font: Segoe UI)
 
 https://github.com/p4ndev/social-makers/blob/master/uix/01.png
 
@@ -68,8 +67,22 @@ https://github.com/p4ndev/social-makers/blob/master/uix/02.png
 
 https://github.com/p4ndev/social-makers/blob/master/uix/03.png
 
-## Mobile version with some features hidden
-![RWD - All projects](https://github.com/p4ndev/social-makers/raw/master/uix/05.jpg "Mobile")
+## All projects mobile version (some features hidden)
+![All projects](https://github.com/p4ndev/social-makers/raw/master/uix/05.jpg "Mobile")
 
-## Fully tablet / desktop version centered
-![RWD - All projects](https://github.com/p4ndev/social-makers/raw/master/uix/04.jpg "Tablet + Desktop")
+## All projects fully tablet / desktop version
+![All projects](https://github.com/p4ndev/social-makers/raw/master/uix/04.jpg "Tablet + Desktop")
+
+## Single project mobile version (some features hidden)
+![Single project](https://github.com/p4ndev/social-makers/raw/master/uix/06.jpg "Mobile")
+
+## Single project fully tablet / desktop version
+![Single project](https://github.com/p4ndev/social-makers/raw/master/uix/07.jpg "Tablet + Desktop")
+
+## Administration feature on display section
+![Single project with administration feature](https://github.com/p4ndev/social-makers/raw/master/uix/08.jpg "Administration panel")
+
+Go direct to the element and edit, once it's done hit button save.
+
+example: considering the project yours, click on description section and start typing. After you're done, click save.
+
