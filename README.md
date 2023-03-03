@@ -33,21 +33,14 @@ https://github.com/p4ndev/social-makers/blob/master/uix/03.png
 
 It will cover sign in, up and forgot, for web interface considering (font: Segoe UI)
 
-# Api
-Restful API's has coded in Asp.net Core with C#, grouped in a gateway done with Nginx.
+# Asp.Net Core - API's
+API's has coded in Asp.net Core with C#, grouped in a gateway done with Nginx.
 
 ![Backend N-Tier Architecture](https://github.com/p4ndev/social-makers/raw/master/Docs/backend.jpg "Asp.Net Core API + Nginx")
 
 The Api gateway will expose some endpoints related to common action to consumers.
 
 It's using SignalR to collect event throughout the API's, direct and basic authentication on server side.
-
-# Web app
-Main channel of usage today, maybe in the near future it could be available on tv, streaming platform, education, mobile and etc.
-
-![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/Docs/frontend.jpg "Angular Framework + Tailwind + RxJS")
-
-It has been coded in Angular Framework with Tailwind and RxJS.
 
 # Icons
 Every icons used come from Font Awesome in HTML / Css classes.
@@ -91,3 +84,23 @@ example: considering the project yours, click on description section and start t
 ![New project](https://github.com/p4ndev/social-makers/raw/master/uix/09.gif "Desktop + Tablet only")
 
 No mobile available due to no space.
+
+# Angular - Single Page Application
+Main channel of usage today, maybe in the near future it could be available on tv, streaming platform, education, mobile and etc.
+
+![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/Docs/frontend.jpg "Angular Framework + Tailwind + RxJS")
+
+## Components
+Every piece of UI with its rules and visual definition markup.
+
+## Models
+Every entities, contracts, types or any shape of information.
+
+## Pages
+Routing components grouping other components in order to render everything properly.
+
+## Styles
+Custom and shared definitions for CSS globally.
+
+## Framework based
+Services, Directives, Guards and Pipes are elements framework wise.
