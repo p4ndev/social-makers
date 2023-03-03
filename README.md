@@ -86,3 +86,7 @@ Go direct to the element and edit, once it's done hit button save.
 
 example: considering the project yours, click on description section and start typing. After you're done, click save.
 
+## New Project - Workflow (animated)
+![New project](https://github.com/p4ndev/social-makers/raw/master/uix/09.gif "Desktop + Tablet only")
+
+No mobile available due to no space available.
