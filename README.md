@@ -25,6 +25,9 @@ Multi model databases (Fauna) to accomplish different scenarios (document, relat
 
 ![Multi model Database](https://github.com/p4ndev/social-makers/raw/master/Docs/database.jpg "Fauna DB")
 
+## Authentication & Authorization
+Our provider is Auth0 on free plan, without social media yet.
+
 ## Api
 Restful API's has coded in Asp.net Core with C#, grouped in a gateway done with Nginx.
 
@@ -40,6 +43,9 @@ Main channel of usage today, maybe in the near future it could be available on t
 ![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/Docs/frontend.jpg "Angular Framework + Tailwind + RxJS")
 
 It has been coded in Angular Framework with Tailwind and RxJS.
+
+## Icons
+Every icons used come from Font Awesome in HTML / Css classes.
 
 # Restrictions
 There is no restriction of size, type, commercial and so on.
