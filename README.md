@@ -53,7 +53,22 @@ There is no restriction of size, type, commercial and so on.
 # Disclaimer
 It's not a advertising platform to create invoices to anyone, the main purpose is make ideas come true somehow.
 
-# Visual Design & Identity
-Three different version of main logo, with no type - it can be applied to any color aligned around.
+# Interface
 
-There's 3 different concept applied to advertising the tool (font: Arvo)
+## Visual Design & Identity
+Three different version of main logo, with no type - it can be applied to any color aligned around.
+3 different concept applied to advertising the tool (font: Arvo)
+
+## Authentication & Authorization
+Provided by Auth0, that cover sign in, up and forgot.
+https://github.com/p4ndev/social-makers/blob/master/uix/01.png
+https://github.com/p4ndev/social-makers/blob/master/uix/02.png
+https://github.com/p4ndev/social-makers/blob/master/uix/03.png
+
+## All projects - Mobile
+Mobile version with some features hidden.
+![RWD - All projects](https://github.com/p4ndev/social-makers/raw/master/uix/05.jpg "Mobile")
+
+## All projects - Tablet / Desktop
+Fully version centered.
+![RWD - All projects](https://github.com/p4ndev/social-makers/raw/master/uix/04.jpg "Tablet + Desktop")
