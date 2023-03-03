@@ -61,14 +61,15 @@ Three different version of main logo, with no type - it can be applied to any co
 
 ## Authentication & Authorization
 Provided by Auth0, that cover sign in, up and forgot.
+
 https://github.com/p4ndev/social-makers/blob/master/uix/01.png
+
 https://github.com/p4ndev/social-makers/blob/master/uix/02.png
+
 https://github.com/p4ndev/social-makers/blob/master/uix/03.png
 
-## All projects - Mobile
-Mobile version with some features hidden.
+## Mobile version with some features hidden
 ![RWD - All projects](https://github.com/p4ndev/social-makers/raw/master/uix/05.jpg "Mobile")
 
-## All projects - Tablet / Desktop
-Fully version centered.
+## Fully tablet / desktop version centered
 ![RWD - All projects](https://github.com/p4ndev/social-makers/raw/master/uix/04.jpg "Tablet + Desktop")
