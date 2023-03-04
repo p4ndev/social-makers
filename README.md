@@ -43,9 +43,6 @@ It's using SignalR to collect event throughout the API's, direct and basic authe
 
 # Interface
 
-## Visual Design & Identity
-Three different version of main logo, with no type - it can be applied to any color aligned around (font: Arvo).
-
 ## All projects mobile version (some features hidden)
 ![All projects](https://github.com/p4ndev/social-makers/raw/master/uix/05.jpg "Mobile")
 
