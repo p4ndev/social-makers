@@ -20,7 +20,7 @@ Once you it is, you just notify the project maker, and then he/she will figure i
 # Database
 Multi model databases (Fauna) to accomplish different scenarios (document, relational, time series and etc).
 
-![Multi model Database](https://github.com/p4ndev/social-makers/raw/master/Docs/database.jpg "Fauna DB")
+![Multi model Database](https://github.com/p4ndev/social-makers/raw/master/docs/database.jpg "Fauna DB")
 
 # Authentication & Authorization
 Our provider is Auth0 on free plan, without social media yet.
@@ -36,7 +36,7 @@ It will cover sign in, up and forgot, for web interface considering (font: Segoe
 # Asp.Net Core - API's
 API's has coded in Asp.net Core with C#, grouped in a gateway done with Nginx.
 
-![Backend N-Tier Architecture](https://github.com/p4ndev/social-makers/raw/master/Docs/backend.jpg "Asp.Net Core API + Nginx")
+![Backend N-Tier Architecture](https://github.com/p4ndev/social-makers/raw/master/docs/backend.jpg "Asp.Net Core API + Nginx")
 
 The Api gateway will expose some endpoints related to common action to consumers.
 
@@ -88,7 +88,7 @@ No mobile available due to no space.
 # Angular - Single Page Application
 Main channel of usage today, maybe in the near future it could be available on tv, streaming platform, education, mobile and etc.
 
-![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/Docs/frontend.jpg "Angular Framework + Tailwind + RxJS")
+![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/docs/frontend.jpg "Angular Framework + Tailwind + RxJS")
 
 ## Components
 Every piece of UI with its rules and visual definition markup.
