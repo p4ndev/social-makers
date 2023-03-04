@@ -5,10 +5,7 @@ The motivation was based on that everyone has ideas, few people make it real due
 
 One of them, is the lack of raw material or even instructions of how proceed.
 
-# Overview
 Social makers will be a repository that will group real people, with best intentions to help, share and even sponsor.
-
-It can be in any field of activity like IoT, Wood, Appliance, Fun, Toys, Garden, Handicraft.
 
 # How it works
 Anyone can publish project idea, invite friends to contribute or even ask them to make it.
@@ -16,6 +13,8 @@ Anyone can publish project idea, invite friends to contribute or even ask them t
 Imagine that anyone has material to send to put away, it could be helpful to someone's idea.
 
 Once you it is, you just notify the project maker, and then he/she will figure it out how to collect it.
+
+It can be in any field of activity like IoT, Wood, Appliance, Fun, Toys, Garden, Handicraft.
 
 # Database
 Multi model databases (Fauna) to accomplish different scenarios (document, relational, time series and etc).
@@ -42,24 +41,10 @@ The Api gateway will expose some endpoints related to common action to consumers
 
 It's using SignalR to collect event throughout the API's, direct and basic authentication on server side.
 
-# Icons
-Every icons used come from Font Awesome in HTML / Css classes.
-
-# Restrictions
-There is no restriction of size, type, commercial and so on.
-
-It's not a advertising platform to create invoices to anyone, the main purpose is make ideas come true somehow.
-
 # Interface
 
 ## Visual Design & Identity
 Three different version of main logo, with no type - it can be applied to any color aligned around (font: Arvo).
-
-https://github.com/p4ndev/social-makers/raw/master/concept/1.jpg
-
-https://github.com/p4ndev/social-makers/raw/master/concept/2.jpg
-
-https://github.com/p4ndev/social-makers/raw/master/concept/3.jpg
 
 ## All projects mobile version (some features hidden)
 ![All projects](https://github.com/p4ndev/social-makers/raw/master/uix/05.jpg "Mobile")
@@ -90,6 +75,8 @@ Main channel of usage today, maybe in the near future it could be available on t
 
 ![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/docs/frontend.jpg "Angular Framework + Tailwind + RxJS")
 
+For user interface and experience (font: Open Sans / 300;400;600;700).
+
 ## Components
 Every piece of UI with its rules and visual definition markup.
 
@@ -102,5 +89,12 @@ Routing components grouping other components in order to render everything prope
 ## Framework based
 Styles, Services, Directives, Guards and Pipes are elements framework wise.
 
-# Project progress
-You can follow and check at https://trello.com/b/GOLwcfSr
+# Restrictions
+It's not an advertising platform to create invoices to anyone, the main purpose is make ideas come true.
+
+There is no restriction of size, type, commercial and so on.
+
+It's an academic project done by owner of this repository in order to practice related subjects.
+
+# Progress
+Kanban for entire project development phase at https://trello.com/b/GOLwcfSr
