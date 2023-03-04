@@ -99,8 +99,5 @@ Every entities, contracts, types or any shape of information.
 ## Pages
 Routing components grouping other components in order to render everything properly.
 
-## Styles
-Custom and shared definitions for CSS globally.
-
 ## Framework based
-Services, Directives, Guards and Pipes are elements framework wise.
+Styles, Services, Directives, Guards and Pipes are elements framework wise.
