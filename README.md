@@ -101,3 +101,6 @@ Routing components grouping other components in order to render everything prope
 
 ## Framework based
 Styles, Services, Directives, Guards and Pipes are elements framework wise.
+
+# Project progress
+You can follow and check at https://trello.com/b/GOLwcfSr
