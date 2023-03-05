@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Logging
     .AddSerilog(
         new LoggerConfiguration()
-            .WriteTo.Seq("http://localhost:5341", apiKey: "zUbBxlmujMuxePjDvOOT")
+            .WriteTo.Seq("http://localhost:5341")
             .Enrich.WithProperty("Application", "Media-API")
                 .CreateLogger()
     );

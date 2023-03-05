@@ -13,7 +13,7 @@ var full = domain + builder.Configuration["Auth0:Audience"];
 builder.Logging
     .AddSerilog(
         new LoggerConfiguration()
-            .WriteTo.Seq("http://localhost:5341", apiKey: "WI1PGZPWelBq9QczXxNX")
+            .WriteTo.Seq("http://localhost:5341")
             .Enrich.WithProperty("Application", "Shortlist-API")
                 .CreateLogger()
     );
