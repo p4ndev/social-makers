@@ -3,11 +3,12 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Logging
-         .AddSerilog(
-            new LoggerConfiguration()
-                .WriteTo.Seq("http://localhost:5341")
-                    .CreateLogger()
-                );
+    .AddSerilog(
+        new LoggerConfiguration()
+            .WriteTo.Seq("http://localhost:5341", apiKey: "zUbBxlmujMuxePjDvOOT")
+            .Enrich.WithProperty("Application", "Media-API")
+                .CreateLogger()
+    );
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
