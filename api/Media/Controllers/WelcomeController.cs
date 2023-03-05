@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Media.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("welcome")]
 public class WelcomeController : ControllerBase{
 
     private readonly ILogger<WelcomeController> _logger;
