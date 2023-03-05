@@ -17,9 +17,9 @@ Once you it is, you just notify the project maker, and then he/she will figure i
 It can be in any field of activity like IoT, Wood, Appliance, Fun, Toys, Garden, Handicraft.
 
 # Database
-Multi model databases (Fauna) to accomplish different scenarios (document, relational, time series and etc).
+Multi model databases to accomplish different scenarios (document, relational, time series and etc).
 
-![Multi model Database](https://github.com/p4ndev/social-makers/raw/master/docs/database.jpg "Fauna DB")
+![Multi model Database](https://github.com/p4ndev/social-makers/raw/master/docs/database.jpg "Providers")
 
 # Authentication & Authorization
 Our provider is Auth0 on free plan, without social media yet.
@@ -38,8 +38,6 @@ API's has coded in Asp.net Core with C#, grouped in a gateway done with Nginx.
 ![Backend N-Tier Architecture](https://github.com/p4ndev/social-makers/raw/master/docs/backend.jpg "Asp.Net Core API + Nginx")
 
 The Api gateway will expose some endpoints related to common action to consumers.
-
-It's using SignalR to collect event throughout the API's, direct and basic authentication on server side.
 
 # Interface
 
@@ -70,7 +68,7 @@ No mobile available due to no space.
 # Angular - Single Page Application
 Main channel of usage today, maybe in the near future it could be available on tv, streaming platform, education, mobile and etc.
 
-![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/docs/frontend.jpg "Angular Framework + Tailwind + RxJS")
+![Frontend Architecture](https://github.com/p4ndev/social-makers/raw/master/docs/frontend.jpg "Angular Framework")
 
 For user interface and experience (font: Open Sans / 300;400;600;700).
 

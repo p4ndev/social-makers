@@ -1,0 +1,3 @@
+docker pull datalust/seq
+
+docker run --name seq -d -p 5341:5341 -p 7740:80 -e ACCEPT_EULA=Y datalust/seq

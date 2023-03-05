@@ -4,10 +4,18 @@ using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using Middlewares;
 using Services;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 var domain = builder.Configuration["Auth0:Protocol"] + builder.Configuration["Auth0:Domain"];
 var full = domain + builder.Configuration["Auth0:Audience"];
+
+builder.Logging
+         .AddSerilog(
+            new LoggerConfiguration()
+                .WriteTo.Seq("http://localhost:5341")
+                    .CreateLogger()
+                );
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -44,10 +52,18 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapGet("/welcome", () => "Welcome").WithName("GetWelcomeMessage");
-app.MapGet("/welcome-private", () => "Private welcome message").WithName("GetPrivateWelcomeMessage").RequireAuthorization();
+// [GET] /welcome
+app.MapGet("/welcome", (ILogger<Program> logger) => {
+    logger.LogInformation("Information came from minimal action controller");
+    return "Welcome";
+}).WithName("GetWelcomeMessage");
 
-// TODO: Should implement policy on Auth0
-app.MapGet("/welcome-private-scoped", () => "Private scoped welcome message").WithName("GetPrivateScopedWelcomeMessage").RequireAuthorization("read:messages");
+// [GET] /welcome-private
+app.MapGet("/welcome-private", () => "Private welcome message")
+    .WithName("GetPrivateWelcomeMessage").RequireAuthorization();
+
+// TODO: [GET] /welcome-private-scoped | Should implement policy on Auth0
+app.MapGet("/welcome-private-scoped", () => "Private scoped welcome message")
+    .WithName("GetPrivateScopedWelcomeMessage").RequireAuthorization("read:messages");
 
 app.Run();

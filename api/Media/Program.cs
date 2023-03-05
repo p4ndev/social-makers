@@ -1,4 +1,13 @@
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Logging
+         .AddSerilog(
+            new LoggerConfiguration()
+                .WriteTo.Seq("http://localhost:5341")
+                    .CreateLogger()
+                );
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -14,4 +23,5 @@ if (app.Environment.IsDevelopment()){
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
 app.Run();
