@@ -47,7 +47,7 @@ app.UseAuthorization();
 app.MapGet("/welcome", () => "Welcome").WithName("GetWelcomeMessage");
 app.MapGet("/welcome-private", () => "Private welcome message").WithName("GetPrivateWelcomeMessage").RequireAuthorization();
 
-// TODO: Should implement it on Auth0
+// TODO: Should implement policy on Auth0
 app.MapGet("/welcome-private-scoped", () => "Private scoped welcome message").WithName("GetPrivateScopedWelcomeMessage").RequireAuthorization("read:messages");
 
 app.Run();

@@ -10,4 +10,8 @@
     <Folder Include="Hub\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="InfluxDB.Client" Version="4.11.0" />
+  </ItemGroup>
+
 </Project>
