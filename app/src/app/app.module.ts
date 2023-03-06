@@ -1,29 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AuthModule } from '@auth0/auth0-angular';
-import 'moment/locale/pt-br';
 
 import { AppRoutingModule } from './app-routing.module';
-import { WelcomeComponent } from './components/stateless/welcome/welcome.component';
+import { AppComponent } from './app.component';
+import { AuthModule } from '@auth0/auth0-angular';
+import { CycompComponent } from './components/stateless/cycomp/cycomp.component';
 
 @NgModule({
   declarations: [
-    WelcomeComponent
+    AppComponent,
+    CycompComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
     AuthModule.forRoot({
-      domain: "dev-nvp7mxmeye1u6wcr.us.auth0.com",
-      clientId: "RRd7katSaFXimLrvKwiEdpBiS8XPbqLE",
+      domain: 'dev-nvp7mxmeye1u6wcr.us.auth0.com',
+      clientId: 'eZUrmJtHuya1acIXYpg8ORpGBzKYIRIB',
       authorizationParams: {
         redirect_uri: window.location.origin
       }
     })
-
   ],
   providers: [],
-  bootstrap: [WelcomeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
