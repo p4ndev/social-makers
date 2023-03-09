@@ -1,0 +1,20 @@
+<nav [class]="helper.Wrap">
+
+  <div class="active bg-white shadow-lg rounded-lg" [ngClass]="vertical"></div>
+
+  <a href="javascript:;" [class]="helper.Menu" (click)="navToAllProjects()" [ngClass]="horizontal[0]">
+    <i [class]="helper.getIcon('fa-list-ul')"></i>
+    <strong [class]="helper.Label">All projects</strong>
+  </a>
+  
+  <a href="javascript:;" [class]="helper.Menu" (click)="navToNewProject()" [ngClass]="horizontal[1]">
+    <i [class]="helper.getIcon('fa-plus')"></i>
+    <strong [class]="helper.Label">New project</strong>
+  </a>
+  
+  <a href="javascript:;" [class]="helper.Menu" (click)="navToSignOut()" [ngClass]="horizontal[2]">
+    <i [class]="helper.getIcon('fa-arrow-right-from-bracket')"></i>
+    <strong [class]="helper.Label">Sign out</strong>
+  </a>
+
+</nav>
