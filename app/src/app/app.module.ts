@@ -7,6 +7,10 @@ import { AuthModule } from '@auth0/auth0-angular';
 import { PublicMenuComponent } from './components/stateful/public-menu/public-menu.component';
 import { LogoComponent } from './components/stateless/logo.component';
 import { AdminMenuComponent } from './components/stateful/admin-menu/admin-menu.component';
+import { NotificationComponent } from './components/stateful/notification/notification.component';
+import {
+  NotificationErrorComponent, NotificationSuccessComponent, NotificationWarningComponent
+} from './components/stateless/notification.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { AdminMenuComponent } from './components/stateful/admin-menu/admin-menu.
     AppComponent,
     LogoComponent,
     PublicMenuComponent,
-    AdminMenuComponent
+    AdminMenuComponent,
+    NotificationComponent,
+    NotificationSuccessComponent,
+    NotificationErrorComponent,
+    NotificationWarningComponent
   ],
   imports: [
     BrowserModule,

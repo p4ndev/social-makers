@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
+    <app-notification />
     <main class="container mx-auto">
       <div class="grid grid-cols grid-cols-12">
         <div class="col-span-12 lg:col-span-3" style="background-color:rgba(255,255,255,0.3);">
@@ -22,7 +23,6 @@ import { Component } from '@angular/core';
 
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt at consequatur nam explicabo totam expedita laudantium tempore, facere accusamus non corporis ullam, culpa obcaecati ipsa officiis blanditiis possimus. Autem ullam odit facilis inventore porro reiciendis exercitationem dolorum nihil hic ex, reprehenderit corrupti! In sed at distinctio quo dolor quibusdam fugiat suscipit? Quod voluptatibus nam doloribus maiores vitadem eligendi dicta tempora beatae quasi?</p>
 
-          
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquam velit iusto, sunt, quidem repellat quo iste neque perspiciatis totam, recusandae ab quaerat vel provident quas ex asperiores. Enim, excepturi?</p>
 
           <p>ecessitatibus blanditiis amet ducimus dicta obcaecati deserunt nam molestiae iusto quod, tenetur accusamus, sint architecto magnam id quia excepturi. Sunt fugiat sequi a voluptatem, aehenderit fugiat, alias voluptatum? Suscipit facere aspernatur libero perferendis corrupti ex corporis a dolor autem soluta incidunt animi labore dignissimos, deserunt earum veritatis nostrum vero nulla eos quae harum? Aperiam beatae, esse quasi animi, porro iusto ducimus repudiandae nobis impedit modi mollitia debitis sit voluptas eius illo magni officia ipsam architecto maiores ab dolor dolorem harum consequuntur explicabo. Aliquam quidem iure, repellendus inventore tenetur rem atque voluptas dignissimos qui explicabo ab porro ut eligen</p>
@@ -44,6 +44,7 @@ import { Component } from '@angular/core';
           <p>sam corrupti labore ratione, ad odit rem, iure qui odio totam perspiciatis minus laborum eum blanditiis reiciendis maiores dolorem pariatur inventore? Et, facilis? Nulla dolore quam ullam minima porro pariatur aperiam qui nesciunt accusantium numquam provident possimus dignissimos, aut impedit. Accusantium dolores totam eius reiciendis explicabo nisi, qui ab aut ex cupiditate. Itaque ea eos nihil eaque placeat ducimus illo! Et voluptatem magni magnam, quos corrupti aliquid! Ipsam veniam aliquam hic sit! Ratione tenetur consequatur adipisci fugiat perferendis itaque quas assumenda atque! Tempore suscipit voluptas molestiae error dolores? Necessitatibus </p>
 
           <router-outlet></router-outlet>
+
         </div>
       </div>
     </main>
