@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { ENotificationStatus } from 'src/app/entities/notification.enum';
-import { INotificationMessage } from 'src/app/entities/notification.interface';
-import { MenuService } from "src/app/services/menu.service";
-import { NotificationService } from 'src/app/services/notification.service';
+import { Component, Inject                } from '@angular/core';
+import { MENU_CONFIG                      } from 'src/app/services/menu.config';
+import { ENotificationStatus              } from 'src/app/entities/notification.enum';
+import { NotificationService              } from 'src/app/services/notification.service';
+import { INotificationMessage             } from 'src/app/entities/notification.interface';
 
 @Component({
   selector: 'app-admin-menu',
@@ -11,7 +11,10 @@ import { NotificationService } from 'src/app/services/notification.service';
 })
 export class AdminMenuComponent {
 
-  constructor(public helper : MenuService, private notification : NotificationService) { }
+  constructor(
+    @Inject("MENU_CONFIG") public helper : typeof MENU_CONFIG,
+    private notification : NotificationService
+  ) { }
 
   test0() : void{
     

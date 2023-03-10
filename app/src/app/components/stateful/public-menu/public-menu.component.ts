@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { MenuService } from "src/app/services/menu.service";
+import { Component, Inject        } from '@angular/core';
+import { MENU_CONFIG              } from 'src/app/services/menu.config';
 
 @Component({
   selector: 'app-public-menu',
@@ -9,10 +9,12 @@ import { MenuService } from "src/app/services/menu.service";
 export class PublicMenuComponent {
 
   vertical    : string = "";
-  horizontal  : Array<string> = ["", "", ""];
   _cssClasses : string = "mobile-active";
+  horizontal  : Array<string> = ["", "", ""];
 
-  constructor(public helper : MenuService) { }
+  constructor(
+    @Inject("MENU_CONFIG") public helper : typeof MENU_CONFIG
+  ) { }
 
   navToAllProjects() : void{ 
     this.vertical = "p0";

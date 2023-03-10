@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { ENotificationStatus } from 'src/app/entities/notification.enum';
-import { NotificationService } from 'src/app/services/notification.service';
+import { Component            } from '@angular/core';
+import { ENotificationStatus  } from 'src/app/entities/notification.enum';
+import { NotificationService  } from 'src/app/services/notification.service';
 
 @Component({
   selector: 'app-notification-box',

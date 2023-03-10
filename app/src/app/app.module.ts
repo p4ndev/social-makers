@@ -3,6 +3,7 @@ import { BrowserModule                  } from '@angular/platform-browser';
 import { AppRoutingModule               } from './app-routing.module';
 import { AuthModule                     } from '@auth0/auth0-angular';
 
+import { MENU_CONFIG                    } from './services/menu.config';
 import { AppComponent                   } from './app.component';
 
 import { PublicMenuComponent            } from './components/stateful/public-menu/public-menu.component';
@@ -33,7 +34,9 @@ import {
       }
     })
   ],
-  providers: [],
+  providers: [
+    { provide: "MENU_CONFIG", useValue: MENU_CONFIG }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
