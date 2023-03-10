@@ -64,3 +64,15 @@ p
     margin-bottom: 20px
 
 /*-------------------------------------------*/
+
+@keyframes hideNotification
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+.notification-inner.off
+    animation: hideNotification 1.2s
+
+
+
