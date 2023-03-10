@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <app-notification />
+    <app-notification-box />
     <main class="container mx-auto">
       <div class="grid grid-cols grid-cols-12">
         <div class="col-span-12 lg:col-span-3" style="background-color:rgba(255,255,255,0.3);">
