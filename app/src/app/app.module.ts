@@ -3,8 +3,10 @@ import { BrowserModule                  } from '@angular/platform-browser';
 import { AppRoutingModule               } from './app-routing.module';
 import { AuthModule                     } from '@auth0/auth0-angular';
 
-import { MENU_CONFIG                    } from './services/menu.config';
 import { AppComponent                   } from './app.component';
+
+import { MENU_CONFIG                    } from './services/menu.config';
+import { NOTIFICATION_CONFIG            } from './services/notification.config';
 
 import { PublicMenuComponent            } from './components/stateful/public-menu/public-menu.component';
 import { AdminMenuComponent             } from './components/stateful/admin-menu/admin-menu.component';
@@ -35,7 +37,8 @@ import {
     })
   ],
   providers: [
-    { provide: "MENU_CONFIG", useValue: MENU_CONFIG }
+    { provide: "MENU_CONFIG",           useValue: MENU_CONFIG             },
+    { provide: "NOTIFICATION_CONFIG",   useValue: NOTIFICATION_CONFIG     },
   ],
   bootstrap: [AppComponent]
 })
