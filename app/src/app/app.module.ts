@@ -6,24 +6,30 @@ import { AuthModule                     } from '@auth0/auth0-angular';
 import { AppComponent                   } from './app.component';
 
 import { MENU_CONFIG                    } from './services/menu.config';
+import { BADGE_CONFIG                   } from './services/badge.config';
 import { NOTIFICATION_CONFIG            } from './services/notification.config';
 
 import { PublicMenuComponent            } from './components/stateful/public-menu/public-menu.component';
 import { AdminMenuComponent             } from './components/stateful/admin-menu/admin-menu.component';
 import { LogoComponent                  } from './components/stateless/logo.component';
 
+import {
+  NotificationErrorComponent,           NotificationSuccessComponent,
+  NotificationWarningComponent          } from './components/stateless/notification.component';
 import { NotificationBoxComponent       } from './components/stateful/notification-box/notification-box.component';
 
 import {
-  NotificationErrorComponent,
-  NotificationSuccessComponent,
-  NotificationWarningComponent          } from './components/stateless/notification.component';
+  BadgePauseComponent,                  BadgeProgressComponent,
+  BadgeDoneComponent                    } from "./components/stateless/badge.component";
+import { BadgeBoxComponent              } from './components/stateful/badge-box/badge-box.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,                   LogoComponent,                    PublicMenuComponent,
     AdminMenuComponent,             NotificationBoxComponent,         NotificationSuccessComponent,
-    NotificationErrorComponent,     NotificationWarningComponent
+    NotificationErrorComponent,     NotificationWarningComponent,     BadgePauseComponent,
+    BadgeDoneComponent,             BadgeProgressComponent,           BadgeBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +45,7 @@ import {
   providers: [
     { provide: "MENU_CONFIG",           useValue: MENU_CONFIG             },
     { provide: "NOTIFICATION_CONFIG",   useValue: NOTIFICATION_CONFIG     },
+    { provide: "BADGE_CONFIG",          useValue: BADGE_CONFIG            },
   ],
   bootstrap: [AppComponent]
 })

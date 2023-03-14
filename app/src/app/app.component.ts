@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EBadgeStatus } from './entities/badge.enum';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,10 @@ import { Component } from '@angular/core';
           </div>
         </div>
         <div class="col-span-12 lg:col-span-9 p-5 bg-white">
+
+          <app-badge-box [status]="status0"  />
+          <app-badge-box [status]="status1"  />
+          <app-badge-box [status]="status2"  />
           
           <h1>Ipisicing elit. Laboriosam aliquam vel</h1>
 
@@ -50,4 +55,10 @@ import { Component } from '@angular/core';
     </main>
   `
 })
-export class AppComponent{ }
+export class AppComponent{
+  
+  status0 : EBadgeStatus = EBadgeStatus.Pause;
+  status1 : EBadgeStatus = EBadgeStatus.Progress;
+  status2 : EBadgeStatus = EBadgeStatus.Done;
+
+}
