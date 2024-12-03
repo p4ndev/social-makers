@@ -1,0 +1,26 @@
+
+$bound_effect: cubic-bezier(.47,1.64,.41,.8)
+
+nav
+    position: fixed
+    bottom: 10px
+    color: #a36b00
+
+    button:nth-child(1)
+        transform: translateY(220px)
+        transition: 0.8s $bound_effect
+
+    button:nth-child(2)
+        transform: translateY(150px)
+        transition: 0.5s $bound_effect
+        
+    a
+        transform: translateY(80px)
+        transition: 0.3s $bound_effect
+
+    &.active
+        button, a
+            transform: translateY(0)
+
+a
+    opacity: 0.5

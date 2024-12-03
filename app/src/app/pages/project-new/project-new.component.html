@@ -1,0 +1,29 @@
+<div class="tertiary-text-color text-lg">
+    <label><i class="fa-solid fa-pencil"></i> Nome</label>
+    <app-input placeholder="até no max 100 caracteres" [maxLength]=config.MaxLength.Title [(content)]="model.Title" />    
+</div>
+
+<div class="mt-4 mb-3 tertiary-text-color text-lg">
+    <label><i class="fa-solid fa-book"></i> Descritivo</label>
+    <app-input [multiline]=true placeholder="até no max 255 caracteres" [maxLength]=config.MaxLength.Description [(content)]="model.Description" />
+</div>
+
+<div class="grid grid-cols-3 gap-4 tertiary-text-color text-lg mb-4">
+    <div>
+        <label><i class="fa-solid fa-dollar-sign"></i> Preço</label>
+        <app-input placeholder="sugerido, podendo ser 0" [(content)]="model.Price" />
+    </div>
+    <div>
+        <label><i class="fa-solid fa-boxes-stacked"></i> Estoque</label>
+        <app-input [number]=true placeholder="podendo ser 0" [(content)]="model.Inventory" />
+    </div>
+    <div>
+        <label><i class="fa-solid fa-signal"></i> Status</label>
+        <app-dropdown-list (onChanged)="onStatusChanged($event)" [shouldResetCallback]="forceReset$" />
+    </div>
+</div>
+
+<label class="tertiary-text-color text-lg mt-3"><i class="fa-solid fa-image"></i> Imagens</label>
+<app-image-menu [(content)]="pics" />
+<em class="opacity-40" *ngIf="pics.length <= 0">No images uploaded...</em>
+<input #imageInput type="file" accept="image/*" (change)="onFileSelected()" class="opacity-0" />

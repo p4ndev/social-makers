@@ -1,0 +1,13 @@
+<app-image-slider *ngIf="components.ImageSlider" />
+
+<div *ngIf="components.Notification">
+    <em>Everything is set globally, test below an example</em>
+    <br>
+    <button class="p-4 bg-red-300" (click)="onErrorNotification()" data-cy="btn-error">Error</button>
+    <button class="p-4 bg-yellow-300" (click)="onWarningNotification()" data-cy="btn-warning">Warning</button>
+    <button class="p-4 bg-green-300" (click)="onSuccessNotification()" data-cy="btn-success">Success</button>
+</div>
+
+<app-image-menu *ngIf="components.ImageMenu" />
+
+<app-reaction-box *ngIf="components.Reaction" [id]=3 />

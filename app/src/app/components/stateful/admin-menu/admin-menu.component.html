@@ -1,0 +1,18 @@
+<nav [class]="helper.Wrap + ' hidden lg:inline-grid'" *ngIf="shouldRender" [ngClass]="{'active': shouldAnimate}">
+
+  <button [class]="helper.Menu" (click)="onUpload()" [ngClass]="{'opacity-50': uploadEvent.State}">
+    <i [class]="helper.Icon + ' fa-upload'"></i>
+    <strong>{{ helper.Source[3] }}</strong>
+  </button>
+
+  <button [class]="helper.Menu" (click)="onSave()" [ngClass]="{'opacity-50': saveEvent.State}">
+    <i [class]="helper.Icon + ' fa-save'"></i>
+    <strong>{{ helper.Source[4] }}</strong>
+  </button>
+
+  <a [routerLink]="paths.ListProject" [class]="helper.Menu">
+    <i [class]="helper.Icon + ' fa-cancel'"></i>
+    <strong>{{ helper.Source[5] }}</strong>
+  </a>
+
+</nav>

@@ -1,0 +1,20 @@
+<nav [class]="helper.Wrap + ' public-menu'">
+
+  <div class="active bg-white shadow-lg rounded-lg" [ngClass]="vertical"></div>
+
+  <a [routerLink]="paths.ListProject" [class]="helper.Menu" [ngClass]="horizontal[0]">
+    <i [class]="helper.Icon + ' fa-list-ul'"></i>
+    <strong [class]="helper.Label">{{ helper.Source[0] }}</strong>
+  </a>
+  
+  <a [routerLink]="paths.NewProject" [class]="helper.Menu" [ngClass]="horizontal[1]">
+    <i [class]="helper.Icon + ' fa-plus'"></i>
+    <strong [class]="helper.Label">{{ helper.Source[1] }}</strong>
+  </a>
+  
+  <a [routerLink]="paths.SignOut" [class]="helper.Menu" [ngClass]="horizontal[2]">
+    <i [class]="helper.Icon + ' fa-arrow-right-from-bracket'"></i>
+    <strong [class]="helper.Label">{{ helper.Source[2] }}</strong>
+  </a>
+
+</nav>

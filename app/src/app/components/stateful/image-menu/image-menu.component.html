@@ -1,0 +1,12 @@
+<aside class="w-full overflow-auto image-menu" *ngIf="content.length > 0">
+  <nav class="grid gap-2 grid-flow-col auto-cols-max mb-3">
+    <div class="text-center" *ngFor="let item of content; let i = index;">
+      <img [src]="source(item)" alt="project" class="mb-2" />
+      <header class="overflow-hidden">
+          <app-icon-button icon="fa-chevron-left"   (onClick)="back(i)"      [disabled]="isBackEligible(i)" />
+          <app-icon-button icon="fa-trash"          (onClick)="remove(i)"    [disabled]="false" />
+          <app-icon-button icon="fa-chevron-right"  (onClick)="forward(i)"   [disabled]="isForwardEligible(i)" />
+      </header>
+    </div>
+  </nav>
+</aside>

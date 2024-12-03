@@ -1,0 +1,97 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+/*-------------------------------------------*/
+
+html
+    height: 100%
+    width: 100%
+    background: rgb(255,240,185)
+    background: linear-gradient(149deg, rgba(255,240,185,1) 0%, rgba(248,177,152,1) 100%)
+    background-attachment: fixed
+
+body
+    height: 100%
+    width: 100%
+
+input, input:hover, input:active,
+textarea, textarea:hover, textarea:active
+    outline: none
+    font-size: 0.9em
+
+textarea
+    resize: none
+
+div.stage
+    min-height: 100vh
+
+/*-------------------------------------------*/
+
+.light
+    font-weight: 300
+
+*
+    font-weight: 400
+
+.semibold
+    font-weight: 600
+
+.bold,strong
+    font-weight: 700
+
+/*-------------------------------------------*/
+
+.primary-text-color
+    color: #f8b199
+
+.primary-bg-color
+    background-color: #f8b199
+
+/*-------------------------------------------*/
+
+.secondary-text-color
+    color: #fff9e4
+
+.secondary-bg-color
+    background-color: #fffbee
+
+/*-------------------------------------------*/
+
+.tertiary-text-color
+    color: #ff4400
+
+.tertiary-bg-color
+    background-color: #ff4400
+
+/*-------------------------------------------*/
+
+h1
+    font-size: 2.8em
+    margin-bottom: 20px
+
+h2
+    font-size: 2.2em
+    margin-bottom: 20px
+
+h3
+    font-size: 1.8em
+    margin-bottom: 20px
+
+p
+    font-size: 0.98em
+    margin-bottom: 20px
+
+/*-------------------------------------------*/
+
+@keyframes hideNotification
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+.notification-inner.off
+    animation: hideNotification 1.2s
+
+
+

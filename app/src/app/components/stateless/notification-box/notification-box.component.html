@@ -1,0 +1,7 @@
+<div class="notification absolute" *ngIf="notification.messages.length > 0">
+  <ng-container *ngFor="let msg of notification.messages">    
+    <app-notification-success [label]="msg.Content" [cssClass]="msg.CssClass" *ngIf="isSuccess(msg.Status)" />
+    <app-notification-warning [label]="msg.Content" [cssClass]="msg.CssClass" *ngIf="isWarning(msg.Status)" />
+    <app-notification-error   [label]="msg.Content" [cssClass]="msg.CssClass" *ngIf="isError(msg.Status)"   />
+  </ng-container>
+</div>

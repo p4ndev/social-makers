@@ -1,0 +1,7 @@
+<input
+  list="status" [class]="helper.Wrap" placeholder="Digite"
+  [(ngModel)]="content!.Name" (input)="onInput()" />
+
+<datalist id="status">
+  <option *ngFor="let item of source" [value]="item.Name"></option>
+</datalist>

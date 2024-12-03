@@ -1,0 +1,46 @@
+<app-icon-button icon="fa-arrow-left" label=" Back" (onClick)="goToProjects()" />
+
+<ng-container *ngIf="canRender; else block">
+    <ng-container *ngTemplateOutlet="header" />
+    <div class="grid lg:grid-cols-3 mt-3">
+        <ng-container *ngTemplateOutlet="left" />
+        <ng-container *ngTemplateOutlet="right" />
+    </div>
+</ng-container>
+
+<ng-template #header>
+    <header class="mt-3">
+        <h1 class="bold text-3xl tertiary-text-color">{{ model.Id }} # {{ model.Title }}</h1>
+        <div class="grid grid-cols-2">
+            <div [ngSwitch]="model.StatusId">
+                <app-badge-progress *ngSwitchCase="1" />
+                <app-badge-pause    *ngSwitchCase="2" />
+                <app-badge-done     *ngSwitchCase="3" />
+            </div>
+            <div class="text-right"><em class="text-md text-slate-400">{{ model.CreatedAt | date:'medium' }}</em></div>
+        </div>
+    </header>
+</ng-template>
+
+<ng-template #left>
+    <div class="col-span-2 left">        
+        <figure class="pt-5">
+            <img [src]="source" alt="main" class="m-auto hidden lg:block" />
+            <app-image-slider [source]="sourceImages()" class="block lg:hidden" />
+        </figure>
+        <app-reaction-box [id]=model.Id! [price]="model.Price" />
+        <article class="p-4 text-slate-500">{{ model.Description }}</article>
+    </div>
+</ng-template>
+
+<ng-template #right>
+    <div class="right hidden lg:block">        
+        <a *ngFor="let media of image; index as i;" (click)="setImage(media.Source, i)" [class]="isActive(i)" href="javascript:;">
+            <img [src]="media.EagerSource" alt="thumbnail" class="mx-auto mb-16" />
+        </a>
+    </div>
+</ng-template>
+
+<ng-template #block>
+    <em class="text-red-500 block mt-2">Unfortunately data isn't available</em>
+</ng-template>

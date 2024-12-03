@@ -1,0 +1,12 @@
+<aside class="flex justify-end">
+  <div class="subscription-box secondary-bg-color overflow-hidden" [ngClass]="{'active': shortlistEvent.State}">  
+    <ng-container *ngIf="shortlistEvent.State">
+      <app-input placeholder="Email" [(content)]="content" />    
+      <div class="flex justify-between mt-2">
+        <app-icon-button label="Subscribe"    icon="fa-user-plus mr-2"  (onClick)="onSubscribe()"   />
+        <app-icon-button label="Unsubscribe"  icon="fa-user-xmark mr-2" (onClick)="onUnsubscribe()" />
+        <app-icon-button label="Cancel"       icon="fa-cancel mr-2"     (onClick)="onCancel()"      />
+      </div>
+    </ng-container>
+  </div>
+</aside>

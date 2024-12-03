@@ -1,0 +1,20 @@
+<div class="grid grid-cols-12 place-items-center image-slider">
+  <div class="left-arrow">
+    <app-icon-button icon="fa-chevron-left" (onClick)="onLeftClicked()" [disabled]="arrows[0]" />
+  </div>
+  <figure class="col-span-10">
+    <img [src]="source[index]" alt="preview" class="main m-auto" />
+  </figure>
+  <div class="right-arrow">
+    <app-icon-button icon="fa-chevron-right" (onClick)="onRightClicked()" [disabled]="arrows[1]" />
+  </div>
+  <footer class="col-span-12">
+    <ul class="flex justify-center">
+      <li
+        *ngFor="let item of source; index as i;" 
+        class="rounded-full p-2 mr-3"
+        [ngClass]="indicatorCssClass(i)">
+      </li>
+    </ul>
+  </footer>
+</div>

@@ -1,0 +1,7 @@
+<div class="flex justify-between secondary-bg-color reaction-box">
+    <app-like-box       icon="fa-heart mr-2"           [id]="id"                                       />
+    <app-icon-button    icon="fa-coins mr-2"           [label]="'R$ ' + price"   [disabled]="true"     />
+    <app-icon-button    icon="fa-cart-shopping mr-2"   label="Comprar"           (onClick)="buy()"     />
+</div>
+
+<app-subscription-box [id]="id" />
